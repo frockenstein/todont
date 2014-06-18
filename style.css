@@ -1,6 +1,10 @@
+body, input, h1, h2, h3 {
+  font-family: 'IM Fell English', cursive;
+  color: #222;
+}
+
 body {
   font-size: 150%;
-  font-family: 'IM Fell English', cursive;
 }
 
 h2 {
@@ -25,21 +29,33 @@ li {
   list-style: none;
 }
 
-footer {
+#meta {
   font-size: 70%;
   border-top: 1px solid #eee;
   margin-top: 30px;
   padding-top: 20px;
 }
 
-footer code {
+#meta code {
   color: #c00;
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 60%;
+}
+
+footer span.fa {
+  color: #333;
+}
+
+footer a {
+  margin-right: 10px;
 }
 
 input[type=text] {
   border: none;
   border-bottom: 1px solid #ccc;
-  font-family: 'IM Fell English', cursive;
   font-size: 100%;
 }
 
@@ -71,7 +87,7 @@ input[type=checkbox]:checked + span:before {
 }
 
 input[type=checkbox]:checked + span:before {
-  letter-spacing: 5px;
+  letter-spacing: 7px;
 }
 
 label {

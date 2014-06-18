@@ -86,12 +86,12 @@ $(function() {
       // cache these since they're used repeatedly
       this.$ul = this.$('ul');
       this.$header = this.$('header');
-      this.$footer = this.$('footer');
+      this.$meta = this.$('#meta');
 
       this.donts = new ToDontList();
       this.listenTo(this.donts, 'add destroy', this.render);
       this.listenTo(this.donts, 'all', this.reckoning);
-      this.listenTo(this.donts, 'all', this.footer);
+      this.listenTo(this.donts, 'all', this.meta);
 
       // nothing stored - seed data
       if (localStorage['todont'] == null) {
@@ -104,7 +104,7 @@ $(function() {
         _.each(items, function(item) {
           this.donts.add(new ToDont(item));
         }, this);
-        this.footer();
+        this.meta();
       }
     },
 
@@ -121,9 +121,9 @@ $(function() {
       if (this.donts.left() == 0) this.$header.html('<h2>You dirty dog!</h2>');
     },
 
-    footer: function() {
-      this.$footer.empty();
-      this.$footer.html('Saved: <code>' + JSON.stringify(this.donts.toJSON()) + '</code>');
+    meta: function() {
+      this.$meta.empty();
+      this.$meta.html('Saved: <code>' + JSON.stringify(this.donts.toJSON()) + '</code>');
     },
 
     create: function(e) {
