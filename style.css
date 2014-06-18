@@ -1,0 +1,84 @@
+body {
+  font-size: 150%;
+  font-family: 'IM Fell English', cursive;
+}
+
+h2 {
+  color: #c00;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: #999;
+}
+
+a:hover {
+  color: #666;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+footer {
+  font-size: 70%;
+  border-top: 1px solid #eee;
+  margin-top: 30px;
+  padding-top: 20px;
+}
+
+footer code {
+  color: #c00;
+}
+
+input[type=text] {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-family: 'IM Fell English', cursive;
+  font-size: 100%;
+}
+
+input[type=text]:focus {
+  outline: none;
+  background-color: #fafafa;
+  border-color: #333;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox] + span:before {
+    font-family: 'FontAwesome';
+    display: inline-block;
+}
+
+input[type=checkbox] + span:before {
+  content: "\f096";
+}
+
+input[type=checkbox] + span:before {
+  letter-spacing: 10px;
+}
+
+input[type=checkbox]:checked + span:before {
+  content: "\f046";
+}
+
+input[type=checkbox]:checked + span:before {
+  letter-spacing: 5px;
+}
+
+label {
+  cursor: pointer;
+}
+
+.dirtydog span {
+  color: #666;
+  text-decoration: line-through;
+}

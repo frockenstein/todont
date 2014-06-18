@@ -2,10 +2,30 @@
 <html>
 <head>
 	<title>Things to not do</title>
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=IM+Fell+English' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="lib.js"></script>
 	<script src="todont.js"></script>
+
 </head>
 <body>
+	<h1>ToDont</h1>
 
+	<header></header>
+
+	<div id="naughty">
+		<ul></ul>
+	</div>
+	Thou Shalt Not: <input name="entry" type="text" autofocus>
+
+	<footer>
+		<code></code>
+	</footer>
+
+	<script type="text/template" id="todont">
+		<label><input type="checkbox"> <span><%= title %></span></label>
+		<a class="fa fa-trash-o" href="#"></a>
+	</script>
 </body>
 </html>
